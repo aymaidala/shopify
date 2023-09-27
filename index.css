@@ -1,252 +1,318 @@
-
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-.nav{
-    display: flex;
-    position: fixed;
-    background-color: black;
-    padding: 1rem 1rem;
-    width: 100vw;
-    color: white;
-    align-items: center;
-    justify-content: space-between;
-    z-index: 100;
-    top: -1%;
-    margin: 0;
-    
+.nav {
+  display: flex;
+  position: fixed;
+  background-color: black;
+  padding: 1rem 1rem;
+  width: 100vw;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 100;
+  top: -1%;
+  margin: 0;
 }
 .nava {
+  display: flex;
+  flex: 1;
+  font-size: 25px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.nava ul {
+  display: flex;
+  display: none;
+  list-style: none;
+}
+.nava i {
+  color: greenyellow;
+  font-size: 2rem;
+}
+.navb {
+  display: flex;
+  align-items: center;
+}
+.navb i {
+  padding: 2rem 2rem;
+  font-size: 2rem;
+  margin: 0 1rem 0 0;
+}
+.navb span {
+  display: none;
+}
+.navb div {
+  text-decoration: underline;
+  padding: 2rem 0 2rem 2rem;
+}
+.navb button {
+  display: none;
+}
+.background-image {
+  background-image: url("/339113bc828c2c7ab760a434e1703b93.webp");
+  background-position: center;
+  /* height: 100vh; */
+  width: auto;
+  padding: 8rem 0rem 2rem 0rem;
+  line-height: 45px;
+  position: relative;
+  background-size: cover;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+.making-com-better {
+  color: white;
+  font-size: 35px;
+  line-height: 45px;
+  position: relative;
+  padding: 4rem 0rem 1rem 1rem;
+}
+.making-com-better p {
+  font-size: 20px;
+  line-height: 25px;
+}
+.start-button-div {
+  position: relative;
+  padding: 4rem 0rem 0rem 1rem;
+}
+.start-button-diva button {
+  height: 3rem;
+  width: 20rem;
+  border-radius: 35px;
+  font-size: 20px;
+}
+.start-button-diva p {
+  color: white;
+}
+.start-button-divb button {
+  height: 3rem;
+  width: 20rem;
+  border-radius: 35px;
+  font-size: 20px;
+  background-color: transparent;
+  color: white;
+}
+.overlay1 {
+  position: absolute;
+  top: 5;
+  height: 3rem;
+  width: 20rem;
+  background-color: black;
+  opacity: 0.5;
+  border-radius: 35px;
+}
+.start-button-divb button i {
+  color: white;
+  /* margin-right: 1rem; */
+}
+.discover-section {
+  /* display: flex; */
+  color: black;
+}
+.discover-section p {
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 45px;
+}
+.discover-section img {
+  align-items: start;
+  height: 25rem;
+  width: 25rem;
+  align-self: center;
+}
+.discover-div {
+  display: none;
+}
+.world {
+  height: 25rem;
+  width: 25rem;
+  background-color: blue;
+}
+.Millions-div {
+  /* display: flex; */
+  color: black;
+  font-size: 20px;
+}
+.Millions-diva {
+  /* display: none; */
+  display: flex;
+  padding: 1rem;
+}
+.Millions-diva div {
+  border-left: 5px solid green;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.Millions-divb {
+  display: flex;
+  padding: 1rem;
+}
+.Millions-divb div {
+  border-left: 5px solid green;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.explore{
+  color: black;
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 18px;
+  padding-left: 4rem;
+  margin-top: 1rem;
+}
+.explore-div{
+    background-color: beige;
+    padding-bottom: 10rem;
+    padding-top: 1rem;
+    
+    
+}
+.Enterprises-divs{
+  display: flex;
+  justify-content: space-around;
+}
+.Enterprise{
+    background-color: white;
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 8rems;
+    width: 18rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+    
+}
+.Enterprise p{
+  font-size: 15px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serifs;
+  font-weight: lighter;
+  padding: 1rem;
+}
+.Enterprise h5{
+  padding-left: 1rem;
+  
+}
+.Enterprise i:hover{
+  color: black;
+}
+.layer{
+  height: 2rem;
+  width: 2rem;
+  background-color: aqua;
+  border-radius: 3rem;
+  margin-right: 1rem;
+  margin: 2rem;
+  border-color: aquamarine;
+  
+  
+  
+}
+.layer-div{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem;
+  background-color: aquamarine;
+  
+  
+}
+.Enterprise i{
+    color: white;
+    
+}
+
+@media only screen and (min-device-width: 900px) {
+  .nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    font-size: 20px;
+    background-color: black;
+  }
+  .nava ul li:hover{
+    text-decoration: underline;
+
+  }
+  .nava div {
+    font-size: 50px;
+    padding: 0.5rem 0 0.5rem 3rem;
+  }
+  .nava div i {
+    font-size: 50px;
+  }
+  .nava ul {
+    font-size: 15px;
+    align-items: center;
+  }
+  .nava ul i {
+    color: white;
+    font-size: 10px;
+  }
+
+  .navb i {
+    /* padding: 0 1rem; */
+    /* font-size: 2rem; */
+    display: none;
+  }
+  .navb div {
+    display: none;
+  }
+
+  .nav ul {
     display: flex;
     flex: 1;
-    font-size: 25px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-.nava ul{
-    display: flex;
-    display: none;
-    list-style: none;
-}
-.nava i{
-    color: greenyellow;
-    font-size: 2rem;
-    
-}
-.navb{
-    display: flex;
+    padding: 0 4rem 0 4rem;
+    /* display: none; */
     align-items: center;
- 
-}
-.navb i{
-    padding: 2rem 2rem;
-    font-size: 2rem;
-    margin: 0 1rem 0 0 ;
-    
-}
-.navb span{
-    display:none;
-}
-.navb div{
-    text-decoration: underline;
-    padding: 2.5rem  0 0 2rem;
+  }
+  .nav ul li {
+    padding: 0 1rem;
+  }
 
-}
-.navb button{
-    display: none;
-}
-.background-image{
+  .navb span {
+    /* padding-top: 3rem; */
+    display: block;
+    align-items: center;
+  }
+  .navb span:hover{
+    text-decoration: underline;
+  }
+
+  .navb button {
+    display: block;
+    background-color: white;
+    border-radius: 30px;
+    width: 150px;
+    height: 40px;
+    font-size: 15px;
+    margin: 0 2rem 0 2rem;
+  }
+  .navb button:hover{
+    background-color: aliceblue;
+  }
+  .start-button {
+    display: contents;
+  }
+  .background-image {
     background-image: url("/339113bc828c2c7ab760a434e1703b93.webp");
     background-position: center;
     /* height: 100vh; */
     width: auto;
-    padding: 8rem 0rem 2rem 0rem;
+    padding: 8rem 0rem 1rem 0rem;
     line-height: 45px;
     position: relative;
-    background-size: cover;
-}
-.overlay{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-}
-.making-com-better{
-    color: white;
-    font-size: 35px;
-    line-height: 45px;
-    position: relative;
-    padding: 4rem 0rem 1rem 1rem;
-}
-.making-com-better p{
-    font-size: 20px;
-    line-height: 25px;
-}
-.start-button-div{
-    position: relative;
-    padding: 4rem 0rem 0rem 1rem;
-}
-.start-button-diva button{
-    height: 3rem;
-    width: 20rem;
-    border-radius: 35px;
-    font-size: 20px;
-}
-.start-button-diva p{
-    color: white;
-}
-.start-button-divb button{
-    height: 3rem;
-    width: 20rem;
-    border-radius: 35px;
-    font-size: 20px;
-    background-color: transparent;
-    color: white;
-    
-}
-.overlay1{
-    position: absolute;
-    top: 5;
-    height: 3rem;
-    width: 20rem;
-    background-color: black;
-    opacity: 0.5;
-    border-radius: 35px;
-
-}
-.start-button-divb button i{
-    color: white;
-    /* margin-right: 1rem; */
-}
-.discover-section{
-    /* display: flex; */
-    color: black;
-}
-.discover-section p{
-    font-size: 40px;
-    font-weight: bolder;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    line-height: 45px;
-}
-.discover-section img{
-    align-items: start;
-    height: 25rem;
-    width: 25rem;
-    align-self: center;
-}
-.discover-div{
-    display: none;
-}
-.world{
-    height: 25rem;
-    width: 25rem;
-    background-color: blue;
-}
-.Millions-div{
-    /* display: flex; */
-    color: black;
-    font-size: 20px;
-    
-}
-.Millions-diva{
-    /* display: none; */
-    display: flex;
-    padding: 1rem;
-}
-.Millions-diva div{
-    border-left: 5px solid green;
-    padding-left: 1rem;
-}
-.Millions-divb{
-display: flex;
-padding: 1rem;
-}
-.Millions-divb div{
-    border-left: 5px solid green;
-    padding-left: 1rem;
-}
-
-
-
-@media only screen and (min-device-width: 900px){
-    .nav{
-        display: flex;
-        position: fixed;
-        width: 100vw;
-        font-size: 20px;
-        background-color: black;
-    }
-    .nava div{
-        font-size: 50px;
-        padding: 0.5rem 0 0.5rem 3rem;
-
-    }
-    .nava div i{
-        font-size: 50px;
-    }
-    .nava ul{
-        font-size: 15px;
-        align-items: center;
-        
-    }
-    .nava ul i{
-        color: white;
-        font-size: 10px;
-    }
-    
-    .navb i{
-        /* padding: 0 1rem; */
-        /* font-size: 2rem; */
-        display: none;
-    
-    }
-    .navb div{
-        display: none;
-    }
-    
-    .nav ul{
-        display: flex;
-        flex: 1;
-        padding: 0 4rem 0 4rem;
-        /* display: none; */
-        align-items: center;
-        
-    }
-    .nav ul li{
-        padding: 0 1rem; 
-        
-    }
-   
-    .navb span{
-        /* padding-top: 3rem; */
-        display: block;
-        align-items: center;
-        
-    }
-    .navb button{
-        display: block;
-        background-color: white;
-        border-radius: 30px;  
-               
-    }
-    .start-button{
-        display: contents;
-    }
-    .background-image{
-        background-image: url("/339113bc828c2c7ab760a434e1703b93.webp");
-        background-position: center;
-        /* height: 100vh; */
-        width: auto;
-        padding: 8rem 0rem 1rem 0rem;
-        line-height: 45px;
-        position: relative;
-    }
-    /* .overlay{
+  }
+  /* .overlay{
         position: absolute;
         top: 0;
         height: 100%;
@@ -254,99 +320,127 @@ padding: 1rem;
         background-color: black;
         opacity: 0.5;
     } */
-    .making-com-better{
-        /* height: 5rem; */
-        width: 35rem;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        padding-left: 3rem;
-    }
-    .start-button-div{
-        display: flex;
-        justify-content: space-between;
-        padding: 3rem;
-        /* width: 70rem; */
-        /* background-color: blue; */
-    }
-    .start-button-diva{
-        display: flex;
-        flex: 1;
-    }
-    .start-button-diva button{
-        height: 3rem;
-        width: 10rem;
-        border-radius: 40px;
-        font-weight: bolder;
-        border: none;
-        font-size: 15px;
-    }
-    .start-button-diva p{
-        margin-top: 6px;
-        padding-left: 2rem;
-        color: white;
-        height: 1rem;
-        width: 12rem;
-        line-height: 18px;
-    }
-    .start-button-divb{
-        justify-content: end;
-        
-    }
-    .start-button-divb button{
-        height: 3rem;
-        width: 17rem;
-        border-radius: 40px;
-        /* border: none; */
-        font-weight: bolder;
-        background-color: transparent;
-        color: white;
-        border-color: black;
-
-    }
-    .discover-section{
-        /* display: flex; */
-        color: black;
-    }
-    .discover-section p{
-        font-size: 40px;
-        font-weight: bolder;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        line-height: 50px;
-        display: none;
-    }
-    .discover-section img{
-        align-items: start;
-        height: 25rem;
-        width: 25rem;
-        align-self: center;
-    }
-    .discover-div{
-        display: contents;
-        font-size: 40px;
-        font-weight: bolder;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        line-height: 50px;
-        background-color: blue;
-        
-    }
-    .world{
-        height: 25rem;
-        width: 25rem;
-        background-color: blue;
-    }
-    .Millions-div{
-        /* display: flex; */
-        color: black;
-        font-size: 20px;
-        
-    }
-    .Millions-diva{
-        /* display: none; */
-        display: flex;
-        padding: 1rem;
-    }
-    .Millions-divb{
+  .making-com-better {
+    /* height: 5rem; */
+    width: 35rem;
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+      "Lucida Sans", Arial, sans-serif;
+    padding-left: 3rem;
+  }
+  .start-button-div {
     display: flex;
-    padding: 1rem;
-    }
+    justify-content: space-between;
+    padding: 3rem;
+    /* width: 70rem; */
+    /* background-color: blue; */
+  }
+  .start-button-diva {
+    display: flex;
+    flex: 1;
+  }
+  .start-button-diva button {
+    height: 3rem;
+    width: 10rem;
+    border-radius: 40px;
+    font-weight: bolder;
+    border: none;
+    font-size: 15px;
+  }
+  .start-button-diva button:hover{
+    background-color: transparent;
+    color: white;
+    border: solid 2px cornsilk;
 
+  }
+  .start-button-diva p {
+    margin-top: 6px;
+    padding-left: 2rem;
+    color: white;
+    height: 1rem;
+    width: 14rem;
+    line-height: 18px;
+  }
+  .start-button-divb {
+    justify-content: end;
+  }
+  .start-button-divb button {
+    height: 3rem;
+    width: 19rem;
+    border-radius: 40px;
+    /* border: none; */
+    font-weight: bolder;
+    background-color: transparent;
+    color: white;
+    border-color: white;
+  }
+  .start-button-divb button:hover{
+    font-size: 50px;
+
+  }
+  .discover-section {
+    display: flex;
+    color: black;
+    /* background-image: url("/WORLD.jpeg"); */
+    background-repeat: no-repeat;
+    /* background-size: 100vw; */
+    padding: 6rem 0 5rem 0;
+  }
+  .discover-section p {
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    line-height: 50px;
+    display: none;
+  }
+
+  .discover-div{
+    display: contents;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    line-height: 50px;
+  }
+  .discover-div p{
+    display: contents;
+    font-size: 40px;
+    font-weight: bolder;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    line-height: 50px;
+    margin-left: 4rem;
+  }
+  .world {
+    height: 25rem;
+    width: 25rem;
+    background-color: blue;
+    /* display: none; */
+  }
+  .Millions-div{
+    /* display: flex; */
+    color: black;
+    font-size: 20px;
+  }
+  .Millions-diva {
+    /* display: none; */
+    display: flex;
+    padding: 3rem 0 3rem 0rem;
+  }
+  .Millions-divb {
+    display: flex;
+    padding: 1rem 0 3rem 0rem;
+  }
+  .discover {
+    padding: 2rem 3rem 2rem 3rem;
+  }
+  .Enterprise{
+    background-color: white;
+    padding: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 18rems;
+    width: 10rem;
+    border-radius: 30px;
+    margin-top: 2rem;
+}
 }
